@@ -1,0 +1,107 @@
+body {
+	background: #eee;
+}
+
+.green {
+	color: green;
+}
+
+.navbar-left {
+	padding: 7px;
+	font-family: 'Tahoma', 'Trebuchet MS', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #555;
+}
+
+.navbar-right {
+	padding: 7px;
+}
+
+.top-divider {
+	clear: both;
+	margin: 2em 0;
+}
+
+#main-content {
+	background: #fff;
+	padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) { 
+	#main-content { 
+		padding-top: 70px; 
+	} 
+}
+
+@media screen and (max-width: 768px) { 
+	.cta-area {
+		font-size: 0.75em;
+	}
+}
+
+#main-content .form-group {
+	clear: both;
+}
+
+.login-remember-line {
+	padding: 0.75em 0;
+}
+
+.form-note {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+.cta-heading h1 {
+	margin-bottom: -0.25em;
+	font-size: 3em;
+}
+
+.benefits {
+	font-size: 2em;
+	padding: 1em 0; 
+}
+
+.row.mobile-footer {
+	text-align: center;
+	padding: 1.5em 0;
+}
+
+.social-icons {
+	padding: 1em 0;
+}
+
+.social-icons img {
+	width: 64px;
+}
+
+.sitelogos img:hover,
+.bottom-banner > a > img:hover,
+.social-icons > a > img:hover
+ {
+	-webkit-filter: grayscale(1); 
+	-webkit-filter: grayscale(100%); 
+	-moz-filter: grayscale(100%);
+	filter: gray; 
+	filter: grayscale(100%);
+	filter: url(desaturate.svg#greyscale);
+}
+
+#bottom-banners > div {
+	text-align: center;
+}
+
+.bottom-banner {
+	background: #fff;
+	padding: 1em;
+}
+
+.bottom-banner > a > img {
+	padding-top: 0.75em;
+}
+
+.input-group-addon > i.fa-2x {
+	width: 28px;
+	height: 28px;
+}
