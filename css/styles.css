@@ -18,6 +18,10 @@ body {
 	padding: 7px;
 }
 
+form div.form-group:first-child {
+	margin-bottom: 0;
+}
+
 .top-divider {
 	clear: both;
 	margin: 2em 0;
@@ -26,18 +30,6 @@ body {
 #main-content {
 	background: #fff;
 	padding-bottom: 15px;
-}
-
-@media screen and (min-width: 768px) { 
-	#main-content { 
-		padding-top: 70px; 
-	} 
-}
-
-@media screen and (max-width: 768px) { 
-	.cta-area {
-		font-size: 0.75em;
-	}
 }
 
 #main-content .form-group {
@@ -54,13 +46,24 @@ body {
 }
 
 .cta-heading h1 {
-	margin-bottom: -0.25em;
-	font-size: 3em;
+	margin-bottom: 0;
+	font-size: 4em;
+	margin-top: 5px;
+}
+
+.cta-heading span {
+	font-size: 1.35em;
+	font-weight: bold;
 }
 
 .benefits {
-	font-size: 2em;
-	padding: 1em 0; 
+	font-size: 1.45em;
+	line-height: 1.75em;
+	padding: 1.5em 0; 
+}
+
+.cta-button {
+	font-size: 24px;
 }
 
 .row.mobile-footer {
@@ -90,6 +93,7 @@ body {
 
 #bottom-banners > div {
 	text-align: center;
+	margin-bottom: 1em;
 }
 
 .bottom-banner {
@@ -104,4 +108,83 @@ body {
 .input-group-addon > i.fa-2x {
 	width: 28px;
 	height: 28px;
+}
+
+.user-field > div {
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+}
+.user-field > input {
+	border-bottom: none;
+	border-bottom-right-radius: 0;
+}
+.pass-field > div {
+	border-top-left-radius: 0;
+}
+.pass-field > input {
+	border-top-right-radius: 0;
+}
+.submit-line {
+	margin-top: 10px;
+}
+.submit-line > .remember-label {
+	padding-left: 12px;
+	line-height: 46px;
+	font-size: 18px;
+	color: #555;
+}
+
+div.QapTcha {
+	margin-top: 0;
+	padding: 0;
+}
+div.QapTcha div.bgSlider {
+	height: 100%;
+	width: 100%;
+	border: none;
+	background: none;
+}
+
+div.QapTcha .Slider {
+  background-size: 100% 100%;
+  height: 44px;
+  width: 60px;
+}
+
+
+/* FOR BIG DEVICES */
+@media screen and (min-width: 768px) { 
+	#main-content { 
+		padding-top: 80px; 
+	} 
+}
+
+/* FOR BIG DEVICES */
+@media screen and (min-width: 768px) and (max-width: 1200px) { 
+	.benefits { 
+		font-size: 1.15em; 
+	} 
+	.cta-heading h1 {
+		font-size: 3em;
+	}
+}
+
+/* FOR SMALL DEVICES */
+@media screen and (max-width: 768px) { 
+	.cta-area {
+		font-size: 0.75em;
+	}
+	.benefits {
+		font-size: 2em;
+		line-height: auto;
+		padding: 1em 0;
+		text-align: center;
+	}
+	.cta-heading h1 {
+		margin-bottom: 0;
+		font-size: 3.25em;
+	}
+	#main-content { 
+		padding-top: 60px; 
+	}
 }
