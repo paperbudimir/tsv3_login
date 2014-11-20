@@ -12,8 +12,8 @@ jQuery.QapTcha = {
 	build : function(options)
 	{
         var defaults = {
-			txtLock : 'Locked : form can\'t be submited',
-			txtUnlock : 'Unlocked : form can be submited',
+			txtLock : 'Slide the arrow!',
+			txtUnlock : 'Identity verified!',
 			disabledSubmit : true,
 			autoRevert : true,
 			PHPfile : 'php/Qaptcha.jquery.php',
@@ -67,8 +67,9 @@ jQuery.QapTcha = {
 							{
 								Slider.draggable('disable').css('cursor','default');
 								inputQapTcha.val('');
-								TxtStatus.text(opts.txtUnlock).addClass('dropSuccess').removeClass('dropError');
-								form.find('input[type=\'submit\']').removeAttr('disabled');
+								TxtStatus.text(opts.txtUnlock).addClass('dropSuccess').removeClass('dropError');								
+								form.find('button[type=\'submit\']').removeAttr('disabled');
+								$("i.fa.fa-lock").removeClass("fa-lock").addClass("fa-unlock");								
 								if(opts.autoSubmit) form.find('input[type=\'submit\']').trigger('click');
 							}
 						},'json');
