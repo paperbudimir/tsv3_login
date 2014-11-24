@@ -19,6 +19,13 @@ body {
 .navbar-right {
 	padding: 7px;
 }
+.visible-xs .navbar-right a,
+.visible-xs .navbar-right a:hover {
+	color: #222;
+	font-weight: bold;
+	background: #5cb85c;
+	border-color: #4cae4c;
+}
 
 .top-divider {
 	clear: both;
@@ -58,9 +65,11 @@ body {
 .social-icons {
 	padding: 1em 0;
 }
-
 .social-icons img {
-	width: 64px;
+	width: 56px;
+}
+.social-icons a:hover {
+	text-decoration: none;
 }
 
 /* SISTER SITES LOGOS STYLES */
@@ -220,7 +229,8 @@ div.support-ticket-body select.form-control {
 /* FOR SMALL DEVICES */
 @media screen and (max-width: 768px) { 
 	nav.navbar div.navbar-left {
-		font-size: 22px;
+		font-size: 20px;
+		padding: 10px 0;
 	}
 	.cta-area {
 		font-size: 0.75em;

@@ -120,9 +120,9 @@
 		<!-- .navbar for smaller screens -->
 		<nav class="navbar navbar-default navbar-fixed-top visible-xs" role="navigation">
 			<div class="container">
-		   	<div class="col-xs-7 navbar-left"><span class="green">Team</span>Skeet.com</div>
-		   	<div class="col-xs-5 navbar-right">
-				<button type="button" class="btn pull-right btn-success">Join here!</button>
+		   	<div class="col-xs-8 navbar-left"><span class="green">Team</span>Skeet.com</div>
+		   	<div class="col-xs-4 navbar-right">
+				<a href="https://www.geckoboard.com/" type="button" class="btn pull-right btn-success" id="topJoinButton" >JOIN NOW!</a>
 		   	</div>
 			</div>
 		</nav>
@@ -141,42 +141,52 @@
 					<div class="col-xs-12 benefits">
 						<div class="col-md-6">
 							<i class="fa fa-check-square-o text-success"></i> 
-							7 Updates a Week!
+							7 Updates a Week
 						</div>
 
 						<div class="col-md-6">
 							<i class="fa fa-check-square-o text-success"></i> 
-							Unlimited Downloads!
+							Hi Quality Picture Sets
 						</div>
 
 						<div class="col-md-6">
 							<i class="fa fa-check-square-o text-success"></i> 
-							Hi-Quality Picture Sets!
+							Unlimited Downloads
 						</div>
 
 						<div class="col-md-6">
 							<i class="fa fa-check-square-o text-success"></i> 
-							Suggest Your Fantasy!
+							Suggest Your Fantasy
+						</div>
+
+						<div class="col-md-6">
+							<i class="fa fa-check-square-o text-success"></i> 
+							1000 Porn Stars
+						</div>
+
+						<div class="col-md-6">
+							<i class="fa fa-check-square-o text-success"></i> 
+							20 Niches
 						</div>
 
 						<div class="col-md-6 hidden-xs">
 							<i class="fa fa-check-square-o text-success"></i> 
-							1000 Porn Stars!
+							24/7 Customer Support
 						</div>
 
 						<div class="col-md-6 hidden-xs">
 							<i class="fa fa-check-square-o text-success"></i> 
-							Fast Streaming!
+							1300 Scenes
 						</div>
 
 						<div class="col-md-6 hidden-xs">
 							<i class="fa fa-check-square-o text-success"></i> 
-							Weekly Giveaways!
+							Weekly Giveaways
 						</div>
 
 						<div class="col-md-6 hidden-xs">
 							<i class="fa fa-check-square-o text-success"></i> 
-							24/7 Customer Support!
+							Fast Streaming
 						</div>
 					</div>
 					<!-- end of .benefits -->
@@ -361,10 +371,25 @@
 				</div>
 
 				<div class="col-xs-12 col-sm-6 social-icons">
-					<a href=""><img src="img/facebook.png" /></a>
-					<a href=""><img src="img/twitter.png" /></a>
-					<a href=""><img src="img/googleplus.png" /></a>
-					<a href=""><img src="img/email.png" /></a>
+					<a href="https://www.facebook.com/teamskeet69">
+						<img src="img/facebook.png" alt="TeamSkeet on Facebook" tittle="TeamSkeet on Facebook" />
+					</a>
+
+					<a href="https://twitter.com/teamskeet">
+						<img src="img/twitter.png" alt="TeamSkeet on Twitter" tittle="TeamSkeet on Twitter"/>
+					</a>
+
+					<a href="http://instagram.com/skeetteam">
+						<img src="img/instagram.png" alt="TeamSkeet on Instagram" tittle="TeamSkeet on Instagram" />
+					</a>
+
+					<a href="https://vimeo.com/channels/skeetsociety">
+						<img src="img/vimeo.png" alt="TeamSkeet on Vimeo" tittle="TeamSkeet on Vimeo" />
+					</a>
+					
+					<a href="http://www.skeetsociety.com">
+						<img src="img/www.png" alt="TeamSkeet on SkeetSociety" tittle="TeamSkeet on SkeetSociety" />
+					</a>
 				</div>
 
 				<div class="col-xs-12 col-sm-6 footer-credits">
@@ -384,6 +409,7 @@
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/QapTcha.jquery.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/tracking.js"></script>
 
 		<script type="text/javascript">
 		  $(document).ready(function(){
