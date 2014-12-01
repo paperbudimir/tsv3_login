@@ -8,11 +8,11 @@ $("#topJoinButton").click(function(e){
 }); 
 
 // standardized predefined function for DRY approach
-var track = function(e, someElement, someKey, someOtherKey) {
+var track = function(e, eventType, someElement, someKey, someOtherKey) {
     e.preventDefault();
     data = {
         "eventData" : {
-            "eventType" : e.type,
+            "eventType" : eventType,
             "data" : {
                 "someElement" : someElement,
                 "someKey" : someKey,

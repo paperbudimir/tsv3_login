@@ -8,7 +8,11 @@ body {
 .bottom-border {
 	border-bottom: 1px solid #ccc;
 }
-
+nav.navbar-fixed-top {
+  	filter: alpha(opacity=80);
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	opacity: 0.8;
+}
 .navbar-left {
 	padding: 7px;
 	font-family: 'Tahoma', 'Trebuchet MS', sans-serif;
@@ -114,12 +118,16 @@ form div.form-group:first-child {
 	height: 28px;
 }
 .user-field > div {
-	border-bottom: none;
 	border-bottom-left-radius: 0;
 }
 .user-field > input {
-	border-bottom: none;
 	border-bottom-right-radius: 0;
+}
+div.user-field {
+	z-index: 99;
+}
+div.pass-field {
+	margin-top: -1px;
 }
 .pass-field > div {
 	border-top-left-radius: 0;
@@ -135,6 +143,26 @@ form div.form-group:first-child {
 	line-height: 46px;
 	font-size: 18px;
 	color: #555;
+}
+#error-message {
+	padding: 9px 8px 8px;
+}
+.form-control-feedback {	
+	display: none;
+}
+.form-control-feedback.fa-remove {
+	top: 9px;
+	right: 3px;
+	color: #F27870;
+}
+.form-control-feedback.fa-check {
+	color: #5cb85c;
+}
+div.input-group.has-success i.fa-check {
+	display: block;
+}
+div.input-group.has-error i.fa-remove {
+	display: block;
 }
 
 /* QapTcha SLIDER CAPTCHA STYLES */

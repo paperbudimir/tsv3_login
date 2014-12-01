@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrapValidator.min.css" />
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
@@ -202,26 +203,31 @@
 				<hr class="visible-xs top-divider" />
 
 				<div class="col-sm-6 pull-left">
-					<form role="form" action="http://members.teamskeet.com/login" method="POST">
+					<form id="login-form" role="form" action="http://members.teamskeet.com/login" method="POST">
 						<div class="form-group">
-				        	<div class="input-group user-field">
+				        	<div class="input-group user-field has-feedback">
 				          		<div class="input-group-addon">
 				          			<i class="fa fa-user fa-2x"></i>
 				          		</div>
 				          		<input type="text" placeholder="Username or email" name="username" class="form-control input-lg">
+				          		<i class="fa fa-2x fa-check form-control-feedback" aria-hidden="true"></i>
+    							<i class="fa fa-2x fa-remove form-control-feedback" aria-hidden="true"></i>
 				        	</div>
 							<!-- end of .input-group -->
 
-				        	<div class="input-group pass-field">
+				        	<div class="input-group pass-field has-feedback">
 				          		<div class="input-group-addon">
 				          			<i class="fa fa-key fa-2x"></i>
 				          		</div>				          	
     							<input type="password" class="form-control input-lg" name="password" id="exampleInputPassword2" placeholder="Password">
+    							<i class="fa fa-2x fa-check form-control-feedback" aria-hidden="true"></i>
+    							<i class="fa fa-2x fa-remove form-control-feedback" aria-hidden="true"></i>
 				        	</div>
 							<!-- end of .input-group -->
 				      	</div>
 						<!-- end of .form-group -->
-
+						
+						<div id="error-message" class="pull-left text-danger small"></div>
 				      	<button type="button" class="btn pull-right btn-link">Forgot Details?</button>
 
 						<div class="form-group">
@@ -246,7 +252,7 @@
 
 							    <div class="pull-left remember-label">Remember me</div>
 
-								<button type="submit" class="btn btn-primary btn-lg pull-right" name="submit" disabled>Login</button>
+								<button id="login-submit" type="submit" class="btn btn-primary btn-lg pull-right" name="submit" disabled="disabled">Login</button>
 							</div>
 						</div>
 						<!-- end of .login-remember-line -->
@@ -405,6 +411,7 @@
 		<!-- start of jQuery, Bootstrap and other JS scripts -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/bootstrapValidator.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/QapTcha.jquery.js"></script>
