@@ -7,7 +7,8 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		
-		<link rel="stylesheet" href="css/bootstrap.min.css" />	
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrapValidator.min.css" />
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
@@ -32,21 +33,16 @@
 
 				<i class="fa fa-times-circle fa-2x close-support-ticket hidden-xs"></i>
 
-				<div class="support-ticket-head row form-step-1">
+				<div class="support-ticket-head row">
 					<h3><center>Sorry you are having issues logging in. Make a ticket and we will solve the problem as soon as possible. :)</center></h3>
 				</div>
-				<!-- end of .form-step-2 -->
-				<div class="support-ticket-head row form-step-2">
-					<h3><center><span class="thank-user">&nbsp;</span>We received your ticket.</center></h3>
-				</div>
-				<!-- end of .form-step-2 -->
 				<!-- end of .support-ticket-head -->
 
-				<div class="support-ticket-body col-xs-12 form-step-1">
+				<div class="support-ticket-body col-xs-12">
 
 					<br />
 
-					<form id="ticket-form" action="" method="POST" role="form">
+					<form action="" method="POST" role="form">
 						<div class="form-group">
 				        	<div class="input-group">
 				          		<div class="input-group-addon">
@@ -60,7 +56,7 @@
 				          		<div class="input-group-addon">
 				          			<i class="fa fa-user fa-2x"></i>
 				          		</div>				          	
-    							<input type="text" class="form-control input-lg" name="user" placeholder="Username">
+    							<input type="text" class="form-control input-lg" name="username" placeholder="Username">
 				        	</div>
 							<!-- end of .input-group -->
 
@@ -95,7 +91,7 @@
 						          	<div class="form-control input-lg QapTcha"></div>
 					        	</div>
 
-								<button id="submit-ticket" type="submit" class="btn btn-primary btn-lg pull-right col-xs-12 col-sm-3" name="submit" disabled >SUBMIT</button>
+								<button type="submit" class="btn btn-success btn-lg pull-right col-xs-12 col-sm-3" name="submit" disabled >Submit</button>
 								<button class="btn btn-default close-support-ticket col-xs-12 visible-xs">Close</button>
 							</div>
 							<!-- end of .form-group -->
@@ -105,17 +101,6 @@
 					</form>
 
 				</div>
-				<!-- end of .form-step-1 -->
-				<div class="support-ticket-body col-xs-12 form-step-2">
-					<br />
-					<br />
-					<center>
-						<p>We will email you with a solution as soon as possible.</p>
-						<p>If you do not receive an email, please contact us at <a href="mailto:help@teamskeet.com">help@teamskeet.com</a>.</p>
-						<p>Thank you.</p>
-					</center>
-				</div>
-				<!-- end of .form-step-2 -->
 				<!-- end of .support-ticket-body -->
 			</div>
 			<!-- end of .support-ticket-container -->
@@ -149,59 +134,59 @@
 				<div class="col-sm-6 pull-right cta-area">
 					<div class="col-xs-12 cta-heading">
 						<center>
-							<h1 class="green"><strong>Not a Member?</strong></h1>
+							<h1 class="text-success"><strong>Not a Member?</strong></h1>
 							<span>Lorem ipsum dolor sit amer, consectetur adipiscing</span>
 						</center>
 					</div>
 
 					<div class="col-xs-12 benefits">
 						<div class="col-md-6">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							7 Updates a Week
 						</div>
 
 						<div class="col-md-6">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							Hi Quality Picture Sets
 						</div>
 
 						<div class="col-md-6">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							Unlimited Downloads
 						</div>
 
 						<div class="col-md-6">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							Suggest Your Fantasy
 						</div>
 
 						<div class="col-md-6">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							1000 Porn Stars
 						</div>
 
 						<div class="col-md-6">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							20 Niches
 						</div>
 
 						<div class="col-md-6 hidden-xs">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							24/7 Customer Support
 						</div>
 
 						<div class="col-md-6 hidden-xs">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							1300 Scenes
 						</div>
 
 						<div class="col-md-6 hidden-xs">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							Weekly Giveaways
 						</div>
 
 						<div class="col-md-6 hidden-xs">
-							<i class="fa fa-check-square-o green"></i> 
+							<i class="fa fa-check-square-o text-success"></i> 
 							Fast Streaming
 						</div>
 					</div>
@@ -218,13 +203,13 @@
 				<hr class="visible-xs top-divider" />
 
 				<div class="col-sm-6 pull-left">
-					<form id="login-form" class="shake" role="form" action="http://members.teamskeet.com/login" method="POST">
+					<form id="login-form" role="form" action="http://members.teamskeet.com/login" method="POST">
 						<div class="form-group">
 				        	<div class="input-group user-field has-feedback">
 				          		<div class="input-group-addon">
 				          			<i class="fa fa-user fa-2x"></i>
 				          		</div>
-				          		<input type="text" placeholder="Username" name="username" class="form-control input-lg">
+				          		<input type="text" placeholder="Username or email" name="username" class="form-control input-lg">
 				          		<i class="fa fa-2x fa-check form-control-feedback" aria-hidden="true"></i>
     							<i class="fa fa-2x fa-remove form-control-feedback" aria-hidden="true"></i>
 				        	</div>
@@ -275,7 +260,7 @@
 				   </form>
 					<div class="col-xs-12 form-note"><center class="small text-muted">* NOTE: If you are upgrading or if you have just purchased a membership it may take up to 15 mins for your login to work properly, if there is a problem that persists after the first 15 mins please contact us. Do not attempt to login numerous times as you may get blocked. IP address and access time recorded for security purposes. Unauthorized access attempts will be emailed to your service provider for immediate suspension and cancellation.</center></div>
 
-					<button type="button" class="btn btn-link btn-block visible-xs support-ticket-trigger">Create a Support Ticket</button>
+					<button type="button" class="btn btn-default btn-block visible-xs support-ticket-trigger">Create a Support Ticket</button>
 				</div>
 				<!-- end of .col-sm-6 -->
 
@@ -287,26 +272,26 @@
 			<div class="row hidden-xs">
 				<div class="col-xs-12 sitelogos">
 					<center>
-						<a href="http://www.innocenthigh.com/" alt=""><img src="img/logos/logo_01.png" alt="Innocent High" title="Innocent High"/></a>
-						<a href="http://www.oyeloca.com/" alt=""><img src="img/logos/logo_02.png" alt="Oye Loca" title="Oye Loca"/></a>
-						<a href="http://www.exxxtrasmall.com/" alt=""><img src="img/logos/logo_03.png" alt="Exxxtra Small" title="Exxxtra Small"/></a>
-						<a href="http://www.tittyattack.com/" alt=""><img src="img/logos/logo_04.png" alt="Titty Attack" title="Titty Attack"/></a>
-						<a href="http://www.therealworkout.com/" alt=""><img src="img/logos/logo_05.png" alt="The Real Workout" title="The Real Workout"/></a>
-						<a href="http://www.povlife.com" alt=""><img src="img/logos/logo_06.png" alt="POV Life" title="POV Life"/></a>
-						<a href="http://www.herfreshmanyear.com/" alt=""><img src="img/logos/logo_07.png" alt="Her Freshman Year" title="Her Freshman Year"/></a>
-						<a href="http://www.teensdoporn.com/" alt=""><img src="img/logos/logo_08.png" alt="Teens Do Porn" title="Teens Do Porn"/></a>
-						<a href="http://www.thisgirlsucks.com/" alt=""><img src="img/logos/logo_09.png" alt="This Girl Sucks" title="This Girl Sucks"/></a>
-						<a href="http://www.solointerviews.com/" alt=""><img src="img/logos/logo_10.png" alt="Solo Interviews" title="Solo Interviews"/></a>
-						<a href="http://www.teencurves.com/" alt=""><img src="img/logos/logo_11.png" alt="Teen Curves" title="Teen Curves"/></a>
-						<a href="http://www.shesnew.com" alt=""><img src="img/logos/logo_12.png" alt="She's New" title="She's New"/></a>
-						<a href="http://www.teenyblack.com" alt=""><img src="img/logos/logo_13.png" alt="Teeny Black" title="Teeny Black"/></a>
-						<a href="http://www.selfdesire.com" alt=""><img src="img/logos/logo_14.png" alt="Self Desire" title="Self Desire"/></a>
-						<a href="http://www.rubteen.com" alt=""><img src="img/logos/logo_15.png" alt="Rub Teen" title="Rub Teen"/></a>
-						<a href="http://www.stepsiblings.com" alt=""><img src="img/logos/logo_16.png" alt="Step Siblings" title="Step Siblings"/></a>
-						<a href="http://www.lusthd.com" alt=""><img src="img/logos/logo_17.png" alt="Lust HD" title="Lust HD"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_01.png" alt="Innocent High" title="Innocent High"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_02.png" alt="Oye Loca" title="Oye Loca"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_03.png" alt="Exxxtra Small" title="Exxxtra Small"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_04.png" alt="Titty Attack" title="Titty Attack"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_05.png" alt="The Real Workout" title="The Real Workout"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_06.png" alt="POV Life" title="POV Life"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_07.png" alt="Her Freshman Year" title="Her Freshman Year"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_08.png" alt="Teens Do Porn" title="Teens Do Porn"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_09.png" alt="This Girl Sucks" title="This Girl Sucks"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_10.png" alt="Solo Interviews" title="Solo Interviews"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_11.png" alt="Teen Curves" title="Teen Curves"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_12.png" alt="She's New" title="She's New"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_13.png" alt="Teeny Black" title="Teeny Black"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_14.png" alt="Self Desire" title="Self Desire"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_15.png" alt="Rub Teen" title="Rub Teen"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_16.png" alt="Step Siblings" title="Step Siblings"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_17.png" alt="Lust HD" title="Lust HD"/></a>
 						<a href="#" alt=""><img src="img/logos/logo_18.png" alt="TeamSkeet Extras" title="TeamSkeet Extras"/></a>
-						<a href="http://www.teenpies.com" alt=""><img src="img/logos/logo_19.png" alt="Teen Pies" title="Teen Pies"/></a>
-						<a href="http://www.teenslovemoney.com" alt=""><img src="img/logos/logo_20.png" alt="Teens Love Money" title="Teens Love Money"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_19.png" alt="Teen Pies" title="Teen Pies"/></a>
+						<a href="#" alt=""><img src="img/logos/logo_20.png" alt="Teens Love Money" title="Teens Love Money"/></a>
 					</center>
 				</div>	
 			</div>
@@ -320,7 +305,7 @@
 					<div class="bottom-banner">
 						<img src="img/ecg_banner.png" alt="Exploited College Girls" title="Exploited College Girls" />
 						<a href="#"><img src="img/ecg_logo.png" alt="Exploited College Girls" title="Exploited College Girls" /></a>
-						<h4 class="green">$34.97 Monthly</h4>
+						<h4 class="text-success">$34.97 Monthly</h4>
 						<p class="small">
 							All Exclusive Content<br />
 							No Hidden Charges<br />
@@ -336,7 +321,7 @@
 					<div class="bottom-banner">
 						<img src="img/st_banner.png" alt="Stranded Teens" title="Stranded Teens" />
 						<a href="#"><img src="img/st_logo.png" alt="Stranded Teens" title="Stranded Teens" /></a>
-						<h4 class="green">$17.95 for 30 days</h4>
+						<h4 class="text-success">$17.95 for 30 days</h4>
 						<p class="small">
 							All Exclusive Content<br />
 							No Hidden Charges<br />
@@ -352,7 +337,7 @@
 					<div class="bottom-banner">
 						<img src="img/fhd_banner.png" alt="Fantasy HD" title="Fantasy HD" />
 						<a href="#"><img src="img/fhd_logo.png" alt="Fantasy HD" title="Fantasy HD" /></a>
-						<h4 class="green">$24.94 / Month</h4>
+						<h4 class="text-success">$24.94 / Month</h4>
 						<p class="small">
 							All Exclusive Content<br />
 							No Hidden Charges<br />
@@ -368,7 +353,7 @@
 					<div class="bottom-banner">
 						<img src="img/t4k_banner.png" alt="Tiny 4k" title="Tiny 4k" />
 						<a href="#"><img src="img/t4k_logo.png" alt="Tiny 4k" title="Tiny 4k" /></a>
-						<h4 class="green">$9.96 / Month</h4>
+						<h4 class="text-success">$9.96 / Month</h4>
 						<p class="small">
 							All Exclusive Content<br />
 							No Hidden Charges<br />
@@ -426,6 +411,7 @@
 		<!-- start of jQuery, Bootstrap and other JS scripts -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/bootstrapValidator.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/QapTcha.jquery.js"></script>

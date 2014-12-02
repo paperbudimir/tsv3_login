@@ -3,7 +3,7 @@ body {
 }
 
 .green {
-	color: #4cae4c;
+	color: green;
 }
 .bottom-border {
 	border-bottom: 1px solid #ccc;
@@ -164,12 +164,6 @@ div.input-group.has-success i.fa-check {
 div.input-group.has-error i.fa-remove {
 	display: block;
 }
-div.input-group.has-error {
-	z-index: 99;
-}
-.shake {	
-	position: relative;
-}
 
 /* QapTcha SLIDER CAPTCHA STYLES */
 div.QapTcha {
@@ -187,31 +181,8 @@ div.QapTcha .Slider {
   height: 44px;
   width: 60px;
 }
-div.Slider.ui-draggable-disabled {
-	-webkit-filter: grayscale(1); 
-	-webkit-filter: grayscale(100%); 
-	-moz-filter: grayscale(100%);
-	filter: gray; 
-	filter: grayscale(100%);
-	filter: url(desaturate.svg#greyscale);
-}
 
 /* SUPPORT TICKET POPUP BOX STYLES */
-#main-content button.support-ticket-trigger {
-	color: #4D4D4D;
-	text-decoration: underline;
-}
-#main-content button.support-ticket-trigger:hover {
-	color: #000;
-}
-nav button.support-ticket-trigger {
-	background: #e6e6e6;
-	color: #474747;
-}
-nav button.support-ticket-trigger:hover {
-	background: #dedede;
-	color: #000;
-}
 div.support-ticket-fader {
 	background: rgba(0,0,0,0.7);
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#4cffffff', endColorstr='#4cffffff');
@@ -263,16 +234,6 @@ div.support-ticket-body .form-control {
 div.support-ticket-body select.form-control {
 	padding-left: 12px;
 	color: #888;
-}
-
-div.form-step-2 {
-	display: none;
-}
-#submit-ticket,
-#submit-ticket:hover,
-#submit-ticket:focus,
-#submit-ticket:active {
-	background-color: #428bca;
 }
 
 
