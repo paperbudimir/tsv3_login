@@ -1,5 +1,7 @@
 body {
-	background: #eee;
+	background-image: url(bgrayslight.svg);
+	background-size: 100% 100%;
+	background-position: 0 center;
 }
 
 .green {
@@ -8,6 +10,10 @@ body {
 .bottom-border {
 	border-bottom: 1px solid #ccc;
 }
+.shadow {
+	box-shadow: 0 0 7px rgba(0,0,0,0.15);
+}
+
 nav.navbar-fixed-top {
   	filter: alpha(opacity=80);
  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
@@ -63,6 +69,7 @@ nav.navbar-fixed-top {
 .row.mobile-footer {
 	text-align: center;
 	padding: 1.5em 0;
+	color: #ccc;
 }
 
 /* SOCIAL ICONS MODULE STYLES */

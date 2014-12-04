@@ -17,6 +17,7 @@
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	   	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	   	<!--[if lt IE 9]>
+	   		<link rel="stylesheet" href="css/ie8specs.css" />
 	   		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	   		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	   	<![endif]-->
@@ -144,7 +145,7 @@
 		</nav>
 
 		<div class="container">
-			<div class="row" id="main-content">
+			<div class="row shadow" id="main-content">
 				
 				<div class="col-sm-6 pull-right cta-area">
 					<div class="col-xs-12 cta-heading">
@@ -281,11 +282,9 @@
 
 			</div>
 			<!-- end of .row -->
-			
-			<hr class="hidden-xs" />
 
 			<div class="row hidden-xs">
-				<div class="col-xs-12 sitelogos">
+				<div class="col-xs-12 sitelogos shadow" style="background: #fff; margin: 2em 0; padding: 2em;">
 					<center>
 						<a href="http://www.innocenthigh.com/" alt=""><img src="img/logos/logo_01.png" alt="Innocent High" title="Innocent High"/></a>
 						<a href="http://www.oyeloca.com/" alt=""><img src="img/logos/logo_02.png" alt="Oye Loca" title="Oye Loca"/></a>
@@ -311,13 +310,11 @@
 				</div>	
 			</div>
 			<!-- end of .row (website logos) -->
-			
-			<hr class="hidden-xs" />
 
 			<div class="row hidden-xs" id="bottom-banners">
 
 				<div class="col-md-3 col-sm-6">
-					<div class="bottom-banner">
+					<div class="bottom-banner shadow">
 						<img src="img/ecg_banner.png" alt="Exploited College Girls" title="Exploited College Girls" />
 						<a href="#"><img src="img/ecg_logo.png" alt="Exploited College Girls" title="Exploited College Girls" /></a>
 						<h4 class="green">$34.97 Monthly</h4>
@@ -333,7 +330,7 @@
 				<!-- end of .col-md-3 .col-sm-6 -->
 
 				<div class="col-md-3 col-sm-6">
-					<div class="bottom-banner">
+					<div class="bottom-banner shadow">
 						<img src="img/st_banner.png" alt="Stranded Teens" title="Stranded Teens" />
 						<a href="#"><img src="img/st_logo.png" alt="Stranded Teens" title="Stranded Teens" /></a>
 						<h4 class="green">$17.95 for 30 days</h4>
@@ -349,7 +346,7 @@
 				<!-- end of .col-md-3 .col-sm-6 -->
 
 				<div class="col-md-3 col-sm-6">
-					<div class="bottom-banner">
+					<div class="bottom-banner shadow">
 						<img src="img/fhd_banner.png" alt="Fantasy HD" title="Fantasy HD" />
 						<a href="#"><img src="img/fhd_logo.png" alt="Fantasy HD" title="Fantasy HD" /></a>
 						<h4 class="green">$24.94 / Month</h4>
@@ -365,7 +362,7 @@
 				<!-- end of .col-md-3 .col-sm-6 -->
 
 				<div class="col-md-3 col-sm-6">
-					<div class="bottom-banner">
+					<div class="bottom-banner shadow">
 						<img src="img/t4k_banner.png" alt="Tiny 4k" title="Tiny 4k" />
 						<a href="#"><img src="img/t4k_logo.png" alt="Tiny 4k" title="Tiny 4k" /></a>
 						<h4 class="green">$9.96 / Month</h4>
@@ -381,8 +378,6 @@
 				<!-- end of .col-md-3 .col-sm-6 -->
 			</div>
 			<!-- end of .row #bottom-banners -->
-
-			<hr class="hidden-xs" />
 
 			<div class="row mobile-footer visible-xs visible-sm">
 				<div class="mobile-banner">
