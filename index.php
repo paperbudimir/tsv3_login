@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" />	
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/bg-album.css" />
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<link rel="stylesheet" href="css/fancy-checkbox.css" />
 		<link rel="stylesheet" type="text/css" href="css/QapTcha.jquery.css" media="screen" />
@@ -24,6 +25,11 @@
 	</head>
 
 	<body>
+		<!-- placeholder for girls images -->
+		<div class="girls-cont">
+			
+		</div>
+
 		<!-- Support ticket transparent black fader div -->
 		<div class="support-ticket-fader"></div>
 
@@ -139,7 +145,7 @@
 			<div class="container">
 		   	<div class="col-xs-8 navbar-left"><span class="green">Team</span>Skeet.com</div>
 		   	<div class="col-xs-4 navbar-right">
-				<a href="https://www.geckoboard.com/" type="button" class="btn pull-right btn-success" id="topJoinButton" >JOIN NOW!</a>
+				<a href="#trololo" type="button" class="btn pull-right btn-success" id="topJoinButton" onclick="track(this, 'topSignupAction', 'topJoinButton', 'someValue2', 'someOtherValue2');" >JOIN NOW!</a>
 		   	</div>
 			</div>
 		</nav>
@@ -286,26 +292,26 @@
 			<div class="row hidden-xs">
 				<div class="col-xs-12 sitelogos shadow" style="background: #fff; margin: 2em 0; padding: 2em;">
 					<center>
-						<a href="http://www.innocenthigh.com/" alt=""><img src="img/logos/logo_01.png" alt="Innocent High" title="Innocent High"/></a>
-						<a href="http://www.oyeloca.com/" alt=""><img src="img/logos/logo_02.png" alt="Oye Loca" title="Oye Loca"/></a>
-						<a href="http://www.exxxtrasmall.com/" alt=""><img src="img/logos/logo_03.png" alt="Exxxtra Small" title="Exxxtra Small"/></a>
-						<a href="http://www.tittyattack.com/" alt=""><img src="img/logos/logo_04.png" alt="Titty Attack" title="Titty Attack"/></a>
-						<a href="http://www.therealworkout.com/" alt=""><img src="img/logos/logo_05.png" alt="The Real Workout" title="The Real Workout"/></a>
-						<a href="http://www.povlife.com" alt=""><img src="img/logos/logo_06.png" alt="POV Life" title="POV Life"/></a>
-						<a href="http://www.herfreshmanyear.com/" alt=""><img src="img/logos/logo_07.png" alt="Her Freshman Year" title="Her Freshman Year"/></a>
-						<a href="http://www.teensdoporn.com/" alt=""><img src="img/logos/logo_08.png" alt="Teens Do Porn" title="Teens Do Porn"/></a>
-						<a href="http://www.thisgirlsucks.com/" alt=""><img src="img/logos/logo_09.png" alt="This Girl Sucks" title="This Girl Sucks"/></a>
-						<a href="http://www.solointerviews.com/" alt=""><img src="img/logos/logo_10.png" alt="Solo Interviews" title="Solo Interviews"/></a>
-						<a href="http://www.teencurves.com/" alt=""><img src="img/logos/logo_11.png" alt="Teen Curves" title="Teen Curves"/></a>
-						<a href="http://www.shesnew.com" alt=""><img src="img/logos/logo_12.png" alt="She's New" title="She's New"/></a>
-						<a href="http://www.teenyblack.com" alt=""><img src="img/logos/logo_13.png" alt="Teeny Black" title="Teeny Black"/></a>
-						<a href="http://www.selfdesire.com" alt=""><img src="img/logos/logo_14.png" alt="Self Desire" title="Self Desire"/></a>
-						<a href="http://www.rubteen.com" alt=""><img src="img/logos/logo_15.png" alt="Rub Teen" title="Rub Teen"/></a>
-						<a href="http://www.stepsiblings.com" alt=""><img src="img/logos/logo_16.png" alt="Step Siblings" title="Step Siblings"/></a>
-						<a href="http://www.lusthd.com" alt=""><img src="img/logos/logo_17.png" alt="Lust HD" title="Lust HD"/></a>
-						<a href="#" alt=""><img src="img/logos/logo_18.png" alt="TeamSkeet Extras" title="TeamSkeet Extras"/></a>
-						<a href="http://www.teenpies.com" alt=""><img src="img/logos/logo_19.png" alt="Teen Pies" title="Teen Pies"/></a>
-						<a href="http://www.teenslovemoney.com" alt=""><img src="img/logos/logo_20.png" alt="Teens Love Money" title="Teens Love Money"/></a>
+						<a href="http://www.innocenthigh.com/" alt=""><img src="img/logos/ih.png" alt="Innocent High" title="Innocent High"/></a>
+						<a href="http://www.oyeloca.com/" alt=""><img src="img/logos/ol.png" alt="Oye Loca" title="Oye Loca"/></a>
+						<a href="http://www.exxxtrasmall.com/" alt=""><img src="img/logos/exs.png" alt="Exxxtra Small" title="Exxxtra Small"/></a>
+						<a href="http://www.tittyattack.com/" alt=""><img src="img/logos/ta.png" alt="Titty Attack" title="Titty Attack"/></a>
+						<a href="http://www.therealworkout.com/" alt=""><img src="img/logos/trw.png" alt="The Real Workout" title="The Real Workout"/></a>
+						<a href="http://www.povlife.com" alt=""><img src="img/logos/pov.png" alt="POV Life" title="POV Life"/></a>
+						<a href="http://www.herfreshmanyear.com/" alt=""><img src="img/logos/hfy.png" alt="Her Freshman Year" title="Her Freshman Year"/></a>
+						<a href="http://www.teensdoporn.com/" alt=""><img src="img/logos/tdp.png" alt="Teens Do Porn" title="Teens Do Porn"/></a>
+						<a href="http://www.thisgirlsucks.com/" alt=""><img src="img/logos/tgs.png" alt="This Girl Sucks" title="This Girl Sucks"/></a>
+						<a href="http://www.solointerviews.com/" alt=""><img src="img/logos/si.png" alt="Solo Interviews" title="Solo Interviews"/></a>
+						<a href="http://www.teencurves.com/" alt=""><img src="img/logos/tc.png" alt="Teen Curves" title="Teen Curves"/></a>
+						<a href="http://www.shesnew.com" alt=""><img src="img/logos/sn.png" alt="She's New" title="She's New"/></a>
+						<a href="http://www.teenyblack.com" alt=""><img src="img/logos/tb.png" alt="Teeny Black" title="Teeny Black"/></a>
+						<a href="http://www.selfdesire.com" alt=""><img src="img/logos/sd.png" alt="Self Desire" title="Self Desire"/></a>
+						<a href="http://www.rubateen.com" alt=""><img src="img/logos/rat.png" alt="Rub A Teen" title="Rub A Teen"/></a>
+						<a href="http://www.stepsiblings.com" alt=""><img src="img/logos/ss.png" alt="Step Siblings" title="Step Siblings"/></a>
+						<a href="http://www.lusthd.com" alt=""><img src="img/logos/lhd.png" alt="Lust HD" title="Lust HD"/></a>
+						<a href="#" alt=""><img src="img/logos/tse.png" alt="TeamSkeet Extras" title="TeamSkeet Extras"/></a>
+						<a href="http://www.teenpies.com" alt=""><img src="img/logos/tp.png" alt="Teen Pies" title="Teen Pies"/></a>
+						<a href="http://www.teenslovemoney.com" alt=""><img src="img/logos/tlm.png" alt="Teens Love Money" title="Teens Love Money"/></a>
 					</center>
 				</div>	
 			</div>
@@ -426,6 +432,7 @@
 		<script type="text/javascript" src="js/QapTcha.jquery.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/tracking.js"></script>
+		<script type="text/javascript" src="js/bg-album.js"></script>
 
 		<script type="text/javascript">
 		  $(document).ready(function(){

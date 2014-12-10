@@ -1,15 +1,14 @@
 // custom tracking code triggers
-$("#topJoinButton").click(function(e){
-    e.preventDefault();
-    track(e, "topJoinButton", "someValue2", "someOtherValue2");
-    $(document).ajaxComplete(function(){
-        window.location.replace(e.target.href);
-    });
-}); 
+//$("a").click(function(e){
+    //e.preventDefault();
+    //if($(this).data('track')) {
+        //track(e, "topJoinButton", "someValue2", "someOtherValue2");
+    //}
+//});
 
 // standardized predefined function for DRY approach
-var track = function(e, eventType, someElement, someKey, someOtherKey) {
-    e.preventDefault();
+function track(eventType, someElement, someKey, someOtherKey) {
+    //e.preventDefault();
     data = {
         "eventData" : {
             "eventType" : eventType,
@@ -30,8 +29,13 @@ var track = function(e, eventType, someElement, someKey, someOtherKey) {
         },
         dataType: "json"
     });
-}
-
+    console.log(event.target.nodeName);
+/*
+    $(document).ajaxComplete(function(){
+        window.location.replace(e.target.href);
+    });
+*/
+};
 
 // Goran's example function
 /*

@@ -1,7 +1,7 @@
 body {
 	background-image: url(bgrayslight.svg);
-	background-size: 300% 300%;
-	background-position: center center;
+	background-size: 100% 100%;
+	background-position: 0 center;
 }
 
 .green {
@@ -44,6 +44,7 @@ nav.navbar-fixed-top {
 #main-content {
 	background: #fff;
 	padding-bottom: 15px;
+	position: relative;
 }
 #main-content .form-group {
 	clear: both;

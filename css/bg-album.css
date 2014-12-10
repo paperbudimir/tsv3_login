@@ -1,0 +1,95 @@
+body {
+	z-index: 1;
+}
+div.girls-cont {
+	position: fixed;
+	display: block;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}
+
+div.girls-cont div.girl-box {
+	width: 8.3333%;
+	height: auto;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: -1px;
+	cursor: pointer;
+}
+
+div.girls-cont div.girl-box div.girl-box-tint {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 1;
+}
+
+div.girls-cont div.girl-box:hover div.girl-box-tint {
+	display: none;
+	vertical-align: top;
+}
+
+div.girls-cont div.girl-box img {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	vertical-align: top;
+}
+
+div.girls-cont div.girl-box div.girl-box-name {
+	display: none;
+}
+
+div.girls-cont div.girl-box:hover div.girl-box-name {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 3px 3px;
+	vertical-align: bottom;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	z-index: 0;
+	height: 10%;
+}
+
+div.girls-cont div.girl-box div.sitelogo {
+	display: none;
+}
+
+div.girls-cont div.girl-box:hover div.sitelogo {
+	display: block;
+	position: absolute;
+	margin: auto;
+	right:0;
+	left:0;
+	width: 100%;
+	height: 30%;
+	background: rgba(0,0,0,0.3);
+	padding: 5px;
+	bottom: 10%;
+}
+
+div.girls-cont div.girl-box div.sitelogo img {
+	display: none;
+}
+
+div.girls-cont div.girl-box:hover div.sitelogo img {
+	display: block;
+	position: absolute;
+	margin: auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width: 60%;
+	height: auto;
+	max-height: 100%;
+}
