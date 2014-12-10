@@ -17,4 +17,20 @@ $(document).ready(function(){
 		});
 	});
 
+	function flipRandomOne() {
+		var randomImage = Math.floor((Math.random() * girls.length) + 1);
+		var randomGirl = Math.floor((Math.random() * girls.length) + 1);
+		console.log(randomImage + " - " + randomGirl);
+		var toBeReplaced = $('.girl-box:nth-child(' + randomImage + ')');
+		var toBeReplacedContent = $(toBeReplaced).find('*');
+		$(toBeReplaced).html('<div class="girl-box-tint"></div><img src="' + girls[randomGirl].thumb + '"/><div class="sitelogo"><img src="img/logos/' + girls[randomGirl].msite + '.png"/></div><div class="girl-box-name">' + girls[randomGirl].mname + '</div>');
+	}
+
+	setInterval(function(){
+	// temporary switch for image changing trigger
+	//$('.help-button').click(function(){
+		flipRandomOne();
+	//});
+	},500);
+
 });

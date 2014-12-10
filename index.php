@@ -135,7 +135,7 @@
 		   	<div class="col-sm-7 navbar-left"><span class="green">Team</span>Skeet.com: We Play Dirty...</div>
 		   	<div class="col-sm-5 navbar-right">
 				<button type="button" class="btn pull-right btn-default support-ticket-trigger">Create a Support Ticket</button>
-				<button type="button" class="btn pull-right btn-link">Help</button>
+				<button type="button" class="btn pull-right btn-link help-button">Help</button>
 		   	</div>
 			</div>
 		</nav>
