@@ -38,76 +38,29 @@ $(document).ready(function(){
 	});
 
 
-	// LOGIN FORM VALIDATION
-	$('.has-feedback .form-control').blur(function(){
-		var parent = $(this).parent('.has-feedback');
-		var fieldname = "Field";
 
-		if (parent.hasClass('user-field')) {
-			fieldname = "Username";
-		} else if (parent.hasClass('pass-field')) {
-			fieldname = "Password";
+	// LOGIN FORM STYLE FIX
+	/*
+	$('.input-group .form-control').focus(function(){
+		var activeField = {
+			backgroundColor : "#fff",
+			color: "#ccc"
 		}
 
-		if ($(this).val().length == 0) {
-			// field empty
-			parent.removeClass('has-success').addClass('has-error');
-			$("#error-message").html(fieldname + " can't be blank!");
-		} else if ($(this).val().length < 6) {
-			// field has les than 6 chars
-			parent.removeClass('has-success').addClass('has-error');
-			$("#error-message").html(fieldname + " must have minimum 6 characters!");
-		} else {
-			// validation positive
-			parent.addClass('has-success').removeClass('has-error');
-			$("#error-message").html("");
-		}
+		$(this).siblings('.input-group-addon').find('i').css(activeField);
 	});
 
-	function shakeForm() {
-		var p = [5, 10, 5, 0, -5, -10, -5, 0];
-		var x = $('.shake').offset().left;
-		var speed = 12;
-		for(var i = 0; i < 2; i++) {
-			$.each(p, function() {
-				$('.shake').animate({'left': this }, speed);
-			});
+	$('.input-group .form-control').blur(function(){
+		var activeField = {
+			backgroundColor : "#fff",
+			borderColor: "#3281F0",
+			color: "#ccc"
 		}
-	}
 
-	$('#login-submit').click(function(e){
-		e.preventDefault();
-		if($(this).attr('disabled', 'false')) {
-
-			$('#error-message').text('');
-			var form = $('#login-form');
-			var rememberme;
-			($('#myonoffswitch').is(":checked")) ? rememberme = 1 :	rememberme = 0;
-
-			data = {
-				username : $("[name='username']", form).val(),
-				password : $("[name='password']", form).val(),
-				rememberme : rememberme,
-			}
-			
-			$.ajax({
-				type: 'POST',
-				url: 'http://31.192.124.222/login',
-				data: data,
-				success: function(data){
-					if(data == 1){
-						location.reload();						
-					}else{
-						$('.has-feedback').removeClass('has-success').addClass('has-error');
-						$('#error-message').html(data);
-						$('#login-submit').removeAttr('disabled');
-						shakeForm();
-					}
-					
-				}
-			});
-
-		}		
+		$(this).siblings('.input-group-addon').find('i').css(activeField);
 	});
+	*/
+
+	
 	
 });

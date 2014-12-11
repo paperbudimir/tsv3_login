@@ -225,7 +225,7 @@
 				          		<div class="input-group-addon">
 				          			<i class="fa fa-user fa-2x"></i>
 				          		</div>
-				          		<input type="text" placeholder="Username" name="username" class="form-control input-lg">
+				          		<input type="text" class="form-control input-lg login-username" name="username" data-value="Username" value="Username">
 				          		<i class="fa fa-2x fa-check form-control-feedback" aria-hidden="true"></i>
     							<i class="fa fa-2x fa-remove form-control-feedback" aria-hidden="true"></i>
 				        	</div>
@@ -235,7 +235,7 @@
 				          		<div class="input-group-addon">
 				          			<i class="fa fa-key fa-2x"></i>
 				          		</div>				          	
-    							<input type="password" class="form-control input-lg" name="password" id="exampleInputPassword2" placeholder="Password">
+    							<input type="text" class="form-control input-lg login-password" name="password" data-value="Password" value="Password">
     							<i class="fa fa-2x fa-check form-control-feedback" aria-hidden="true"></i>
     							<i class="fa fa-2x fa-remove form-control-feedback" aria-hidden="true"></i>
 				        	</div>
@@ -425,6 +425,7 @@
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
 		<script type="text/javascript" src="js/QapTcha.jquery.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/validation.js"></script>
 		<script type="text/javascript" src="js/tracking.js"></script>
 
 		<script type="text/javascript">
